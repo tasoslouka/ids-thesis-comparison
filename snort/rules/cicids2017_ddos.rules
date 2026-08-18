@@ -1,0 +1,8 @@
+# Rule A - attacker-specific
+alert tcp 172.16.0.1 any -> 192.168.10.50 80 (msg:"RULE_A specific CICIDS2017 DDoS HTTP traffic"; flow:stateless; detection_filter:track by_src, count 100, seconds 1; classtype:attempted-dos; sid:1000101; rev:1;)
+
+# Rule B - generic victim
+alert tcp any any -> 192.168.10.50 80 (msg:"RULE_B generic high-rate HTTP traffic to victim"; flow:stateless; detection_filter:track by_dst, count 100, seconds 1; classtype:attempted-dos; sid:1000102; rev:1;)
+
+# Rule C - broader internal web-server scope
+alert tcp any any -> 192.168.10.0/24 80 (msg:"RULE_C generic high-rate HTTP traffic to internal web server"; flow:stateless; detection_filter:track by_dst, count 100, seconds 1; classtype:attempted-dos; sid:1000103; rev:1;)

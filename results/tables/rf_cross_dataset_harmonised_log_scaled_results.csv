@@ -1,0 +1,3 @@
+Train_Dataset,Test_Dataset,Training_Rows,Testing_Rows,Number_of_Features,Transformation,Accuracy,Precision,Recall,F1-score,False Positive Rate,True Negatives,False Positives,False Negatives,True Positives
+CICIDS2017,UNSW-NB15,499985,257673,10,unit_conversion_log1p_standard_scaling,0.360938088197056,0.8333333333333334,3.036320465407201e-05,6.072419677068722e-05,1.075268817204301e-05,92999,1,164668,5
+UNSW-NB15,CICIDS2017,257673,499985,10,unit_conversion_log1p_standard_scaling,0.4842285268558057,0.48625428354073463,0.557368,0.5193882533612145,0.5889153349200952,102765,147220,110658,139342

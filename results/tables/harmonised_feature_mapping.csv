@@ -1,0 +1,11 @@
+Harmonised_Feature,CICIDS2017_Column,UNSW_NB15_Column
+duration,Flow Duration,dur
+fwd_packets,Total Fwd Packets,spkts
+bwd_packets,Total Backward Packets,dpkts
+fwd_bytes,Total Length of Fwd Packets,sbytes
+bwd_bytes,Total Length of Bwd Packets,dbytes
+packet_rate,Flow Packets/s,rate
+fwd_pkt_mean,Fwd Packet Length Mean,smean
+bwd_pkt_mean,Bwd Packet Length Mean,dmean
+fwd_iat_mean,Fwd IAT Mean,sinpkt
+bwd_iat_mean,Bwd IAT Mean,dinpkt

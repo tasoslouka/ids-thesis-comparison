@@ -1,0 +1,4 @@
+    123 BAD-TRAFFIC same SRC/DST
+     75 INFO web bug 0x0 gif attempt
+      7 NETBIOS SMB IPC$ unicode share access
+      2 DNS SPOOF query response with TTL of 1 min. and no authority

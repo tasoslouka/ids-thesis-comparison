@@ -1,0 +1,5 @@
+ 309041 CICIDS2017 DDoS HTTP traffic to victim
+    368 INFO web bug 0x0 gif attempt
+     12 ICMP Destination Unreachable Communication with Destination Host is Administratively Prohibited
+     10 DNS SPOOF query response with TTL of 1 min. and no authority
+      7 NETBIOS SMB IPC$ unicode share access

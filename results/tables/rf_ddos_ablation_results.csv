@@ -1,0 +1,5 @@
+experiment,features_removed,missing_requested_features,features_used,accuracy,precision,recall,f1_score,false_positive_rate,true_negatives,false_positives,false_negatives,true_positives
+A_all_features,None,None,78,0.9998892408568327,0.9999218872051242,0.9998828353837141,0.9999023609131208,0.00010236462278636504,19536,2,3,25602
+B_without_destination_port,Destination Port,None,77,0.9998449371995658,0.9999218811030388,0.9998047256395235,0.9998632999394614,0.00010236462278636504,19536,2,5,25600
+C_without_port_and_tcp_window,Destination Port; Init_Win_bytes_forward; Init_Win_bytes_backward,None,75,0.9996677225704982,0.9997266052179347,0.9996875610232376,0.9997070827393623,0.0003582761797522776,19531,7,8,25597
+D_without_top5_features,Destination Port; Max Packet Length; Init_Win_bytes_forward; Average Packet Size; Min Packet Length,None,73,0.9998227853709324,0.999882826231301,0.9998047256395235,0.9998437744102484,0.00015354693417954756,19535,3,5,25600

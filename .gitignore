@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.conda/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Datasets - do not upload
+data/
+*.pcap
+*.pcapng
+*.parquet
+*.csv.gz
+
+# Large/local model files
+*.pkl
+*.joblib
+
+# Temporary files
+*.tmp
+*.log
+.cache/
+
+# LaTeX build files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# Thesis source / template - not required for reproducibility repo
+thesis-30CREDITS TEMPLATE/
+thesis/
+
+# Large generated Snort outputs
+ddos_deep_analysis/snort_threshold_test/*/alert
+results/snort/raw_alerts/
+snort/pcaps/
+
+# Exploratory / legacy work not required for final thesis reproduction
+ddos_deep_analysis/
+notebooks/
