@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.ipynb_checkpoints/
+
+# Virtual / Conda environments
+.venv/
+venv/
+env/
+.env/
+.conda/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Raw and processed datasets
+data/raw/
+data/processed/
+*.pcap
+*.pcapng
+
+# Large dataset files
+*.csv.gz
+*.parquet
+
+# Temporary / cache files
+*.tmp
+*.log
+.cache/
+
+# LaTeX temporary files
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+# Local generated models
+*.pkl
+*.joblib
