@@ -102,7 +102,8 @@ for exp_name, removed_features in experiments.items():
     model = RandomForestClassifier(
         n_estimators=100,
         random_state=42,
-        n_jobs=-1
+        n_jobs=-1,
+        class_weight="balanced"
     )
 
     model.fit(X_train[selected_features], y_train)
