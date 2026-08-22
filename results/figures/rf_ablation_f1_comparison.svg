@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="980" viewBox="0 0 1400 980">
+  <rect width="1400" height="980" fill="white"/>
+  <style>
+    .title{font:700 42px Arial,sans-serif;fill:#111}.axis{font:28px Arial,sans-serif;fill:#111}.tick{font:22px Arial,sans-serif;fill:#111}.value{font:26px Arial,sans-serif;fill:#111}.grid{stroke:#bbb;stroke-width:1.5;stroke-dasharray:8 6}.bar{fill:#4c78a8}.axisline{stroke:#111;stroke-width:2}
+  </style>
+  <text class="title" x="700" y="70" text-anchor="middle">Random Forest Feature Ablation F1-Score Comparison</text>
+
+  <line class="axisline" x1="170" y1="120" x2="170" y2="800"/>
+  <line class="axisline" x1="170" y1="800" x2="1330" y2="800"/>
+
+  <line class="grid" x1="170" y1="120" x2="1330" y2="120"/><text class="tick" x="145" y="128" text-anchor="end">1.0000</text>
+  <line class="grid" x1="170" y1="256" x2="1330" y2="256"/><text class="tick" x="145" y="264" text-anchor="end">0.9999</text>
+  <line class="grid" x1="170" y1="392" x2="1330" y2="392"/><text class="tick" x="145" y="400" text-anchor="end">0.9998</text>
+  <line class="grid" x1="170" y1="528" x2="1330" y2="528"/><text class="tick" x="145" y="536" text-anchor="end">0.9997</text>
+  <line class="grid" x1="170" y1="664" x2="1330" y2="664"/><text class="tick" x="145" y="672" text-anchor="end">0.9996</text>
+  <text class="tick" x="145" y="808" text-anchor="end">0.9995</text>
+
+  <rect class="bar" x="245" y="252.8" width="180" height="547.2"/>
+  <rect class="bar" x="515" y="359.0" width="180" height="441.0"/>
+  <rect class="bar" x="785" y="518.4" width="180" height="281.6"/>
+  <rect class="bar" x="1055" y="412.2" width="180" height="387.8"/>
+
+  <text class="value" x="335" y="228" text-anchor="middle">0.999902</text>
+  <text class="value" x="605" y="334" text-anchor="middle">0.999824</text>
+  <text class="value" x="875" y="493" text-anchor="middle">0.999707</text>
+  <text class="value" x="1145" y="387" text-anchor="middle">0.999785</text>
+
+  <text class="tick" x="335" y="845" text-anchor="middle">All features</text>
+  <text class="tick" x="605" y="845" text-anchor="middle">Without Destination Port</text>
+  <text class="tick" x="875" y="845" text-anchor="middle"><tspan x="875" dy="0">Without port and</tspan><tspan x="875" dy="28">TCP window features</tspan></text>
+  <text class="tick" x="1145" y="845" text-anchor="middle"><tspan x="1145" dy="0">Without five selected</tspan><tspan x="1145" dy="28">features</tspan></text>
+
+  <text class="axis" x="750" y="940" text-anchor="middle">Experiment</text>
+  <text class="axis" transform="translate(55 470) rotate(-90)" text-anchor="middle">F1-score</text>
+</svg>
