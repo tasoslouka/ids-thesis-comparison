@@ -47,7 +47,6 @@ print(f"Cleaned rows: {len(df_clean)}")
 print("Label distribution:")
 print(y.value_counts().to_string())
 
-# Keep indices so we can map predictions back to original rows
 train_idx, test_idx = train_test_split(
     X.index,
     test_size=0.2,
@@ -63,7 +62,8 @@ y_test = y.loc[test_idx]
 model = RandomForestClassifier(
     n_estimators=100,
     random_state=42,
-    n_jobs=-1
+    n_jobs=-1,
+    class_weight="balanced"
 )
 
 print("Training Random Forest...")
@@ -87,7 +87,6 @@ results["error_type"] = "correct"
 results.loc[(results["true_label"] == 0) & (results["predicted_label"] == 1), "error_type"] = "false_positive"
 results.loc[(results["true_label"] == 1) & (results["predicted_label"] == 0), "error_type"] = "false_negative"
 
-# Add useful original columns if present
 useful_original_cols = [
     "Flow ID",
     "Source IP",
@@ -115,7 +114,6 @@ misclassified = pd.concat(
 false_positives = misclassified[misclassified["error_type"] == "false_positive"]
 false_negatives = misclassified[misclassified["error_type"] == "false_negative"]
 
-# Key features for interpretation
 key_features = [
     "Destination Port",
     "Flow Duration",
@@ -151,10 +149,7 @@ groups = {
 }
 
 for group_name, idx in groups.items():
-    row = {
-        "group": group_name,
-        "rows": len(idx)
-    }
+    row = {"group": group_name, "rows": len(idx)}
 
     if len(idx) > 0:
         for feature in key_features:
