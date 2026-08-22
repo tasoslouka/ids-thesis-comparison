@@ -1,0 +1,2 @@
+sid,message,custom_rule_alerts,first_alert_timestamp,last_alert_timestamp,latency_from_reference_seconds,alert_activity_span_seconds,distinct_alert_seconds,distinct_source_ips,distinct_destination_ips,mean_alerts_per_active_second,median_alerts_per_active_second,maximum_alerts_in_one_second
+1000100,CICIDS2017 DDoS threshold 100,309041,2017-07-07 19:56:41.881950,2017-07-07 20:16:10.614769,10.085013,1168.732819,1004,1,1,307.8097609561753,292.0,1290
