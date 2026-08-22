@@ -1,7 +1,0 @@
-Corrected baseline confusion matrix values used for the thesis figure:
-TN=19537
-FP=1
-FN=4
-TP=25601
-
-The PNG supplied in the thesis should reflect these values.
